@@ -18,3 +18,5 @@ A Turtle Document comprised of a glossary of various technology terms associated
 13. Big Data
 14. Smart Data
 15. Much more......
+
+Live Edition, in 5-Star Linked Open Data form published at: <http://bit.ly/1cchBvV> . 

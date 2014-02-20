@@ -8,7 +8,7 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-02-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-02-20"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -29,7 +29,7 @@
 								  <#SPARQL>, <#SPARQLProtocol>, <#SPARQLQueryLanguage>,
 								  <#SPARQLResultsFormat>, <#SPARQLGraphStoreProtocol>,
 								  <#SPARQLFederatedQuery>, <#SPARQLServiceDescription>,
-								  <#R2RML>, <#CSV>, <#SQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
+								  <#R2RML>, <#CSV>, <#SQL>, <#NewSQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
 								  <#HTTPURL>, <#WebID>, <#Turtle>, <#JSONLD>, <#Notation>, <#Grammar>, <#Syntax>,
 								  <#Referent>, <#Denotes>, <#CoReference>, <#Graph>, <#RDFXML>,
 								  <#Resource>, <#Relationship>, <#Relation>, <#RDFRelationship>,

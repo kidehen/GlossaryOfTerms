@@ -29,7 +29,7 @@
 								  <#SPARQL>, <#SPARQLProtocol>, <#SPARQLQueryLanguage>,
 								  <#SPARQLResultsFormat>, <#SPARQLGraphStoreProtocol>,
 								  <#SPARQLFederatedQuery>, <#SPARQLServiceDescription>,
-								  <#R2RML>, <#CSV>, <#SQL>, <#NewSQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
+								  <#R2RML>, <#CSV>, <#SQL>, <#NewSQL>, <#NoSQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
 								  <#HTTPURL>, <#WebID>, <#Turtle>, <#JSONLD>, <#Notation>, <#Grammar>, <#Syntax>,
 								  <#Referent>, <#Denotes>, <#CoReference>, <#Graph>, <#RDFXML>,
 								  <#Resource>, <#Relationship>, <#Relation>, <#RDFRelationship>,
@@ -785,7 +785,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 												  represented as RDF statements (triples).
 											   """ ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Triplestore> ;
-<http://www.w3.org/2004/02/skos/core#broader> <#DBMS>, <#GraphDBMS>, <#RDBMS> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#DBMS>, <#GraphDBMS>, <#RDBMS>, <http://dbpedia.org/resource/Deductive_database> ;
 <http://purl.org/dc/terms/references>  <#RDF>, <#Relationship>, <#RDFStatement>, <#RDFRelation>,
 									   <#Relation>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
@@ -1368,7 +1368,11 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <#SQL>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <#Language> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Structured Query Language (SQL)" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Declarative query language for performing Create, Read, Update, and Delete operations on data represented as relational tables. This standard is widely adopted across SQL relational database management (RDBMS) products; collectively, these RDBMS products currently underly a majority applications and sevices that drive the global economy. """ ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Declarative query language for performing Create, Read, Update, and Delete 
+												  operations on data represented as relational tables. This standard is widely 
+												  adopted across SQL relational database management (RDBMS) products; collectively, 
+												  these RDBMS products currently underly a majority applications and sevices that drive 
+												  the global economy. """ ;
 <#hashTag> "#SQL" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/SQL> ;
 <http://purl.org/dc/terms/isReferencedBy> <#R2RML>, <#RDBMS>, <#DBMS>,
@@ -1379,14 +1383,35 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 										  
 <#NewSQL>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
-<http://www.w3.org/2000/01/rdf-schema#label> "New SQL" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of SQL based RDBMS product that handle scalability challenges using techiques such as: clustering and veritcal partitioning of data. Basically, for all intents an purposes, this is about product specific extensions to SQL to aimed at scalability challenges posed by the World Wide Web and Internet. """ ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NewSQL" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of SQL based RDBMS product that handles 
+												  scalability challenges using techiques such as: clustering and veritcal partitioning 
+												  of data. Basically, for all intents an purposes, this is about product specific extensions 
+												  to SQL to aimed at scalability challenges posed by the World Wide Web and Internet. """ ;
 <#hashTag> "#NewSQL" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/NewSQL> ;
 <http://purl.org/dc/terms/references> <#SQL>, <#BigData>, <#DBMS>, <#GraphDBMS>, <#RDBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <virtuoso71.ttl#Virtuoso71>,
 										  <http://virtuoso.openlinksw.com>, <http://www.openlinksw.com> .
 
+
+# NoSQL
+										  
+<#NoSQL>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NoSQL" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of RDBMS product that 
+												  doesn't conflate SQL (Structured Query Language) and Relational Database. Typically, you will
+												  find database management systems (DBMS) that support relations represented as relational 
+												  property/predicate graphs associated with this moniker. 
+												  . """ ;
+<#hashTag> "#NoSQL" ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/NewSQL> ;
+<http://purl.org/dc/terms/references> <#SQL>, <#BigData>, <#DBMS>, <#GraphDBMS>, <#RDBMS>, <#RDFDBMS> ;
+<http://purl.org/dc/terms/isReferencedBy> <virtuoso71.ttl#Virtuoso71>,
+										  <http://virtuoso.openlinksw.com>, <http://www.openlinksw.com> .
 # SPASQL
 										  
 <#SPASQL>

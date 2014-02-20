@@ -8,7 +8,7 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-02-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-02-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -181,9 +181,12 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "Semantics" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """The meaning of words, phrases, and terms in a particular 
 												  usage context (scenario or situation). For instance, in sentences and 
-												  statements they denote entity relationship participants that perform
-												  specific relationship roles e.g., subject, predicate, and object .""" ;
+												  statements, it refers to meaning derived from the combined effects of 
+												  entity relationships and relationship participant roles
+												  (e.g., subject, predicate, and object).
+												  """ ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.merriam-webster.com/dictionary/semantics> ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Semantics> ;
 <http://purl.org/dc/terms/isReferencedBy> <#RDF>, <#RDFStatement>, <#SemanticWeb>, <#RDBMS>, <#StructuredData>,
 										  <http://www.w3.org/TR/rdf11-mt/> .
 

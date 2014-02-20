@@ -1388,7 +1388,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of SQL based RDBMS product that handles 
 												  scalability challenges using techiques such as: clustering and veritcal partitioning 
 												  of data. Basically, for all intents an purposes, this is about product specific extensions 
-												  to SQL to aimed at scalability challenges posed by the World Wide Web and Internet. """ ;
+												  to SQL aimed at scalability challenges posed by data access, integration, and management
+												  at World Wide Web and Internet scales. """ ;
 <#hashTag> "#NewSQL" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/NewSQL> ;
 <http://purl.org/dc/terms/references> <#SQL>, <#BigData>, <#DBMS>, <#GraphDBMS>, <#RDBMS> ;

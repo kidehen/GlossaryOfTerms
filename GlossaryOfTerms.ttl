@@ -8,12 +8,14 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-02-20"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-02-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
 <http://creativecommons.org/ns#attributionURL> <http://kingsley.idehen.net/dataspace/person/kidehen#this>;
-<http://purl.org/dc/terms#source> <> ;
+<http://dbpedia.org/ontology/influencedBy> <http://www.w3.org/People/Berners-Lee/card#i>, <http://dbpedia.org/resource/John_F._Sowa>,
+								  <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>, <http://www.ihmc.us/users/phayes/PatHayes>,
+								  <http://dbpedia.org/resource/Peter_Chen>, <http://danbri.org/foaf.rdf#danbri>;
 <http://xmlns.com/foaf/0.1/topic> <#Data>,<#StructuredData>,<#BigData>, <#Internet>,
                                   <#OpenData>,<#LinkedData>,<#LinkedOpenData>,<#LODCloud>,
 								  <#SmartData>,<#SemanticWeb>, <#this>, <http://danbri.org/foaf.rdf#danbri>,
@@ -39,7 +41,9 @@
 								  <#SQLDBMS>, <#SDQ>, <#HTTP>, <#DBpediaLive>, <#OpenLinkDBpediaLive>,
 								  <#LODCloudCache>, <#URIBurner>, <#ODBCDSN>, <#ODBCDriverManager>, <#ODBCDriver>,
 								  <#JDBCDSN>, <#JDBCDriverManager>, <#JDBCDriver>, <#Semantics>, <#Ontology>,
-								  <#DataDictionary>, <#DatabaseSchema>, <#Schema> .
+								  <#DataDictionary>, <#DatabaseSchema>, <#Schema>, <http://dbpedia.org/resource/John_F._Sowa>,
+								  <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>, <http://www.ihmc.us/users/phayes/PatHayes>,
+								  <http://dbpedia.org/resource/Peter_Chen>  .
 
 
 ## Prior Versions
@@ -201,6 +205,7 @@
 
 <#IRI>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "IRI" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """An Internationalized Resource Identifier (IRI) is a 
 												  Universal Character Set (Unicode//ISO 10646) string based sign 
 												  used to denote (signify, name, or "refer to") an entity.
@@ -237,7 +242,8 @@
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://sw.opencyc.org/concept/Mx4rvmQlOpwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#IRI>, <#Identifier>, <#URI> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#HTTPURL> ;
-<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
+<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL>, <http://www.w3.org/Addressing/URL/url-spec.txt>, 
+										  <http://www.ietf.org/rfc/rfc1738.txt>.
 
 <#HTTPURI>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
@@ -455,7 +461,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#WebID>, <#LinkedOpenData>, <#Data>, 
-										<http://slidesha.re/1hF48QL> .
+										<http://slidesha.re/1hF48QL>, <http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html> .
 
 # Relatinonships 
 																														
@@ -501,7 +507,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#WebID>, <#LinkedOpenData>, <#Data>, 							
-										<http://slidesha.re/1hF48QL> .
+										<http://slidesha.re/1hF48QL>, <http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html> .
 
 <#RDFRelation>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -686,7 +692,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 ## Reference Material Articles on RDBMS
 
 # Peter Chen
-										
+
+## Peter Chen Dissertation 										
 <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/bibo/Article> ;
 <http://www.w3.org/2000/01/rdf-schema#label> """Entity Relationship Model -- Toward a Unified View of Data""" ;
@@ -719,7 +726,37 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 <http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> ;
 <http://purl.org/dc/terms/isReferencedBy> <#RDBMS>, <#GraphDBMS>, 
 										  <#SQLDBMS>, <#DBMS>, <#RDFDBMS>, <#RDF> .
-									  
+										  
+# John F Sowa Talks Collection
+										  
+<http://www.jfsowa.com/talks/>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """John Sowa's Talks/Presentation Collection (Directory or Folder)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> .
+
+
+# Other contributions from John F. Sowa
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """Clarifying the nature of Entities & Relations (ontolog post by John F. Sowa)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> ;
+<http://xmlns.com/foaf/0.1/topic> <#Entity>, <#Relation>, <#Relationship>, <#Semantics> .
+
+# Ed Barkmeyer
+<http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ;
+<http://xmlns.com/foaf/0.1/name> "Edward J. Barkmeyer" . 
+
+
+# Ed Barkmeyer posts
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00264.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """Clarifying the nature of Entities & Relations (ontolog post by Ed Barkmeyer)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this> ;
+<http://xmlns.com/foaf/0.1/topic> <#Entity>, <#Relation>, <#Relationship>, <#Semantics>, <#RDF> .
+								  
 ## ACM CoSQL Article 
 
 <http://queue.acm.org/detail.cfm?id=1961297#this>
@@ -1213,7 +1250,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 										  <http://bit.ly/16EVFVG>, <http://slidesha.re/1hF48QL>, 
 										  <http://slidesha.re/18CtxGK>, <http://www.tbray.org/ongoing/When/200x/2003/05/21/RDFNet>,
 										  <https://dvcs.w3.org/hg/rdf/raw-file/default/rdf-mt/index.html>,
-										  <http://www.w3.org/TR/rdf11-mt/>.
+										  <http://www.w3.org/TR/rdf11-mt/>, <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/>.
 										  
 # Schema.org
 
@@ -1862,7 +1899,19 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://www.w3.org/2002/07/owl#sameAs> <https://kingsley.idehen.net/about/id/entity/http/www.slideshare.net/kidehen/understanding-29894555> ;
 <http://purl.org/dc/terms/references> <#LinkedData>, <#RDF>, <#Data>, <#OpenData>, <#BigData>, <#SmartData>, <#SemanticWeb> . 
 
-## Pat Hayes Presentation on Blogic (Webby Logic)
+## Pat Hayes 
+<http://www.ihmc.us/users/phayes/PatHayes>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ;
+<http://xmlns.com/foaf/0.1/name> "Patrick John Hayes" ;
+<http://xmlns.com/foaf/0.1/firstName> "Patrick";
+<http://xmlns.com/foaf/0.1/familyName> "Hayes" ;
+<http://xmlns.com/foaf/0.1/nick> "Pat Hayes" ;
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/> .
+
+
+
+#Presentation on Blogic (Webby Logic)
+
 <http://slidesha.re/18CtxGK>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/bibo/Slideshow> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Blogic" ;
@@ -2036,6 +2085,15 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/World_Wide_Web_Consortium> ;
 <http://purl.org/dc/terms/references> <#RDF>, <#LinkedData>, <http://dbpedia.org/resource/JSON-LD> .
 
+<http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/>
+<http://www.w3.org/2000/01/rdf-schema#label> "RDF 1.1 Semantics" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """This document is part of RDF 1.1 document suite. 
+												  It is a revision of the 2004 Semantics specification 
+												  for RDF, thereby superseding the aformentioned document.
+											   """ ;
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://purl.org/dc/terms/references> <#RDF>, <#Relation>, <#RDFRelation>, <#Semantics>, <#Identifier>, 
+										<#RDFStatement> .
 
 
 ## To be continued .... ##

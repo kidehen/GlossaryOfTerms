@@ -8,7 +8,7 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-02-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-02-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -1201,7 +1201,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Web" ;
 <#hashTag> "#SemanticWeb" ;
-<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/d7/3b/cd/d73bcdc088c18144c9bf017d6d215d00.jpg>;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg>;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Semantically Enhanced Linked Data Network (Cloud).""";
 <http://purl.org/dc/terms/description> """Webby (or Web-like) Structured Data that's endowed with machine- and human-comprehensible entity relationship semantics. Basically, the meaning of a relationshipo between two entities is understandable by machines and humans e.g., <#SemanticWeb>, <http://dbpedia.org/resource/Semantic_Web>, <http://yago-knowledge.org/resource/Semantic_Web>, <http://rdf.freebase.com/ns/m.076k0>, and <http://www.wikidata.org/entity/Q54837> all refer to (name or denote) the same entity (thing).""" ;
 is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity>, <#SmartData> ;

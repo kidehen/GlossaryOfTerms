@@ -8,12 +8,14 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-02-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-06-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
 <http://creativecommons.org/ns#attributionURL> <http://kingsley.idehen.net/dataspace/person/kidehen#this>;
-<http://purl.org/dc/terms#source> <> ;
+<http://dbpedia.org/ontology/influencedBy> <http://www.w3.org/People/Berners-Lee/card#i>, <http://dbpedia.org/resource/John_F._Sowa>,
+								  <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>, <http://www.ihmc.us/users/phayes/PatHayes>,
+								  <http://dbpedia.org/resource/Peter_Chen>, <http://danbri.org/foaf.rdf#danbri>;
 <http://xmlns.com/foaf/0.1/topic> <#Data>,<#StructuredData>,<#BigData>, <#Internet>,
                                   <#OpenData>,<#LinkedData>,<#LinkedOpenData>,<#LODCloud>,
 								  <#SmartData>,<#SemanticWeb>, <#this>, <http://danbri.org/foaf.rdf#danbri>,
@@ -29,7 +31,7 @@
 								  <#SPARQL>, <#SPARQLProtocol>, <#SPARQLQueryLanguage>,
 								  <#SPARQLResultsFormat>, <#SPARQLGraphStoreProtocol>,
 								  <#SPARQLFederatedQuery>, <#SPARQLServiceDescription>,
-								  <#R2RML>, <#CSV>, <#SQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
+								  <#R2RML>, <#CSV>, <#SQL>, <#NewSQL>, <#NoSQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
 								  <#HTTPURL>, <#WebID>, <#Turtle>, <#JSONLD>, <#Notation>, <#Grammar>, <#Syntax>,
 								  <#Referent>, <#Denotes>, <#CoReference>, <#Graph>, <#RDFXML>,
 								  <#Resource>, <#Relationship>, <#Relation>, <#RDFRelationship>,
@@ -39,7 +41,10 @@
 								  <#SQLDBMS>, <#SDQ>, <#HTTP>, <#DBpediaLive>, <#OpenLinkDBpediaLive>,
 								  <#LODCloudCache>, <#URIBurner>, <#ODBCDSN>, <#ODBCDriverManager>, <#ODBCDriver>,
 								  <#JDBCDSN>, <#JDBCDriverManager>, <#JDBCDriver>, <#Semantics>, <#Ontology>,
-								  <#DataDictionary>, <#DatabaseSchema>, <#Schema> .
+								  <#DataDictionary>, <#DatabaseSchema>, <#Schema>, <http://dbpedia.org/resource/John_F._Sowa>,
+								  <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>, <http://www.ihmc.us/users/phayes/PatHayes>,
+								  <http://dbpedia.org/resource/Peter_Chen>, <#Intranet>, <#Extranet>, <#WAN>, <#LAN>,
+								  <http://schema.org/docs/datamodel.html> .
 
 
 ## Prior Versions
@@ -188,7 +193,8 @@
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.merriam-webster.com/dictionary/semantics> ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Semantics> ;
 <http://purl.org/dc/terms/isReferencedBy> <#RDF>, <#RDFStatement>, <#SemanticWeb>, <#RDBMS>, <#StructuredData>,
-										  <http://www.w3.org/TR/rdf11-mt/> .
+										  <http://www.w3.org/TR/rdf11-mt/>, <http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00029.html>,
+										  <http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00041.html> .
 
 <#Identifier>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
@@ -201,6 +207,7 @@
 
 <#IRI>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "IRI" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """An Internationalized Resource Identifier (IRI) is a 
 												  Universal Character Set (Unicode//ISO 10646) string based sign 
 												  used to denote (signify, name, or "refer to") an entity.
@@ -237,7 +244,8 @@
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://sw.opencyc.org/concept/Mx4rvmQlOpwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#IRI>, <#Identifier>, <#URI> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#HTTPURL> ;
-<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
+<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL>, <http://www.w3.org/Addressing/URL/url-spec.txt>, 
+										  <http://www.ietf.org/rfc/rfc1738.txt>.
 
 <#HTTPURI>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
@@ -291,15 +299,16 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 
 <#ODBCDSN>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
-<http://www.w3.org/2000/01/rdf-schema#label> "ODBC DSN" ;
+<http://www.w3.org/2000/01/rdf-schema#label> "ODBC Data Source Name (DSN)" ;
+<http://www.w3.org/2004/02/skos/core#altLabel> "ODBC DSN" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A string based identifier used to denote (signify, name, or "refer to") 
 												 an ODBC accessible database item (Table, View, Stored Procedure). 
 												 Basically, this is an X.509 Distinguished Name (DN). 
 												 """ ;
-<#hashTag> "#DSN", "ODBC" ;
+<#hashTag> "#DSN", "#ODBC" ;
 <http://purl.org/dc/terms/hasPart> <#ODBCDSNConnectString> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Identifier>, <#DSN> ;
-<http://purl.org/dc/terms/references> <#JDBC>, <#Database>, <#RDBMS>, <#DBMS> ;
+<http://purl.org/dc/terms/references> <#ODBC>, <#JDBC>, <#Database>, <#RDBMS>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
 
 <#ODBCDSNConnectString>
@@ -318,15 +327,16 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 
 <#JDBCDSN>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
-<http://www.w3.org/2000/01/rdf-schema#label> "JDBC DSN" ;
+<http://www.w3.org/2000/01/rdf-schema#label> "JDBC Data Source Name (DSN)" ;
+<http://www.w3.org/2004/02/skos/core#altLabel> "JDBC DSN" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A string based identifier used to denote (signify, name, or "refer to") 
 												 a JDBC accessible database item (Table, View, Stored Procedure). 
 												 Basically, this takes the form of jdbc: scheme URL. 
 												 """ ;
-<#hashTag> "#DSN", "JDBC" ;
+<#hashTag> "#DSN", "#JDBC" ;
 <http://purl.org/dc/terms/hasPart> <#ODBCDSNConnectString> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Identifier>, <#DSN>, <#URL> ;
-<http://purl.org/dc/terms/references> <#JDBC>, <#Database>, <#RDBMS>, <#DBMS> ;
+<http://purl.org/dc/terms/references> <#JDBC>, <#ODBC>, <#Database>, <#RDBMS>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
 
 <#JDBCDSNConnectString>
@@ -343,6 +353,14 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://purl.org/dc/terms/references> <#JDBC>, <#Database>, <#RDBMS>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
 
+<#SQLPrimaryKey>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Primary Key" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """An identifier that denotes a record in a SQL relational database table. 
+												 """ ;
+<http://www.w3.org/2004/02/skos/core#broader> <#Identifier> ;	
+<http://purl.org/dc/terms/references> <#Database>, <#SQLRDBMS>, <#RDBMS> .	
+							 
 ## Naming and Denotation 
 
 <#CoReference>
@@ -407,14 +425,15 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "WebID-TLS" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """WebID Authentication Protocol.""" ;
 <http://purl.org/dc/terms/description> """Combined use of Transport Layer Secruity (as already implemented by existing HTTPS user agents) 
-										  and RDF based entity relationship semantics as a mechanism authenticating WebIDs -- that scales 
+										  and RDF based entity relationship semantics as a mechanism for authenticating WebIDs -- that scales 
 										  from local area networks (or Intranets clouds) to the wide area networks (e.g., 
 										  the public Web and Internet clouds).
 									  """ ;
 <#hashTag> "#WebIDTLS" ;
 <http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/wiki/WebID> ;
-<http://purl.org/dc/terms/references> <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL> ;
-<http://purl.org/dc/terms/isReferencedBy> <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/tls-respec.html> .
+<http://purl.org/dc/terms/references> <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL>, 
+									  <#Internet>, <#WAN>, <#LAN>, <#WorldWideWEb> ;
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/2005/Incubator/webid/spec/> .
 
 ## Graph, Resources, and Entities
 
@@ -455,7 +474,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#WebID>, <#LinkedOpenData>, <#Data>, 
-										<http://slidesha.re/1hF48QL> .
+										<http://slidesha.re/1hF48QL>, <http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html> .
 
 # Relatinonships 
 																														
@@ -500,8 +519,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#RDFRelation>, <#SQLRelation> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
-										<#WebID>, <#LinkedOpenData>, <#Data>, 							
-										<http://slidesha.re/1hF48QL> .
+										<#WebID>, <#LinkedOpenData>, <#Data>, <#SQLRelation>, <#RDFRelation>,							
+										<http://slidesha.re/1hF48QL>, <http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html> .
 
 <#RDFRelation>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -681,12 +700,14 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 										<http://bit.ly/NC1yaP>, 
 										<http://queue.acm.org/detail.cfm?id=1961297#this>,
 										<http://www.jfsowa.com/pubs/cg1976.pdf#this>,
-										<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this> .
+										<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
+										<http://www.dbdebunk.com/2014/04/david-mcgoveran-comments-on-jim.html> .
 
 ## Reference Material Articles on RDBMS
 
 # Peter Chen
-										
+
+## Peter Chen Dissertation 										
 <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/bibo/Article> ;
 <http://www.w3.org/2000/01/rdf-schema#label> """Entity Relationship Model -- Toward a Unified View of Data""" ;
@@ -719,7 +740,45 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 <http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> ;
 <http://purl.org/dc/terms/isReferencedBy> <#RDBMS>, <#GraphDBMS>, 
 										  <#SQLDBMS>, <#DBMS>, <#RDFDBMS>, <#RDF> .
-									  
+										  
+# John F Sowa Talks Collection
+										  
+<http://www.jfsowa.com/talks/>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """John Sowa's Talks/Presentation Collection (Directory or Folder)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> .
+
+
+# Other contributions from John F. Sowa
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00259.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """Clarifying the nature of Entities & Relations (ontolog post by John F. Sowa)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/John_F._Sowa> ;
+<http://xmlns.com/foaf/0.1/topic> <#Entity>, <#Relation>, <#Relationship>, <#Semantics> .
+
+# Ed Barkmeyer
+<http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ;
+<http://xmlns.com/foaf/0.1/name> "Edward J. Barkmeyer" ;
+<http://xmlns.com/foaf/0.1/made> <http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00041.html> ,
+								<http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00264.html> .
+
+
+# Ed Barkmeyer posts
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-02/msg00264.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """Clarifying the nature of Entities & Relations (ontolog post by Ed Barkmeyer)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this> ;
+<http://xmlns.com/foaf/0.1/topic> <#Entity>, <#Relation>, <#Relationship>, <#Semantics>, <#RDF> .
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00041.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>;
+<http://www.w3.org/2000/01/rdf-schema#label> """Clarifying what 'Semantics' means (ontolog post by Ed Barkmeyer)""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this> ;
+<http://xmlns.com/foaf/0.1/topic> <#Semantics>, <#Language> .
+								  
 ## ACM CoSQL Article 
 
 <http://queue.acm.org/detail.cfm?id=1961297#this>
@@ -785,7 +844,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 												  represented as RDF statements (triples).
 											   """ ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Triplestore> ;
-<http://www.w3.org/2004/02/skos/core#broader> <#DBMS>, <#GraphDBMS>, <#RDBMS> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#DBMS>, <#GraphDBMS>, <#RDBMS>, <http://dbpedia.org/resource/Deductive_database> ;
 <http://purl.org/dc/terms/references>  <#RDF>, <#Relationship>, <#RDFStatement>, <#RDFRelation>,
 									   <#Relation>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
@@ -1105,15 +1164,41 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 
 ## Different kinds of Cloud Abstractions
 
+<#WAN>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Wide Area Network (WAN)" ;
+<#hashTag> "#WAN" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Linked Computer Network (Cloud) that covers a wide area e.g., a network across 
+												  disparately located departments, branches, and divisions of an enterprise. 
+												  """;
+<http://www.w3.org/2004/02/skos/core#broader> <#Internet> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
+
 <#Internet>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Internet" ;
 <#hashTag> "#Internet" ;
 <http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Publicl Linked Computer Network (Cloud).""";
-<http://purl.org/dc/terms/description> """Global computer network facilitated by TCP/IP and the 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Publicly accessible and Wide Area scoped Linked Computer Network (Cloud).""";
+<http://purl.org/dc/terms/description> """Global and publicly accessible computer network facilitated by TCP/IP and the 
 										  Domain Name Service (DNS) protocols.""" ;
+<http://www.w3.org/2004/02/skos/core#broader> <#WAN> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
+
+<#LAN>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "LAN" ;
+<#hashTag> "#LAN" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/cd/18/2a/cd182a1f9c684c735fc2138d5565360c.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Privately accessible Linked Computer Network (Cloud).""";
+<http://purl.org/dc/terms/description> """Privately accessible computer network scoped to a local workgroup, division, or entire enterprise 
+										  situated at common physical location .
+										  """ ;
+<http://www.w3.org/2004/02/skos/core#broader> <#Internet> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
 
 <#WorldWideWeb> 
@@ -1126,7 +1211,38 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Web of Linked Documents.""";
 <http://purl.org/dc/terms/description> """Globally accessible abstraction layer atop the Internet cloud comprised of a network (or cloud) of Linked Documents. The predominant document format is HTML.""" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_Wide_Web> ;
-<http://www.w3.org/2004/02/skos/core#broader> <#Internet> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#Internet>, <#WAN> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> ;
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/History/1989/proposal.html> .
+
+<#Intranet> 
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Intranet" ;
+<#hashTag> "#Intranet" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/TimBL-World-Wide-Web-Proposal/WWW-Original-Proposal-and-Linked-Data-3.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://bit.ly/10Y9FL1>,<http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Private Web of Linked Documents.""";
+<http://purl.org/dc/terms/description> """Privately accessible abstraction layer atop a local area network (LAN) 
+										  comprised of a network (or cloud) of Linked Documents. 
+										  The predominant document format is HTML.""" ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Intranet> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#WorldWideWeb>, <#Internet> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
+
+<#Extranet>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Extranet" ;
+<#hashTag> "#Extranet" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/TimBL-World-Wide-Web-Proposal/WWW-Original-Proposal-and-Linked-Data-3.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://bit.ly/10Y9FL1>,<http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Conditionally private Web of Linked Documents.""";
+<http://purl.org/dc/terms/description> """Conditionally accessible (i.e, subject to access controls and policies) abstraction layer 
+										  atop a local area network (LAN) comprised of a network (or cloud) of Linked Documents. 
+										  The predominant document format is HTML.""" ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Extranet> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#WorldWideWeb>, <#Internet> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
 
 # LOD Cloud
@@ -1164,7 +1280,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Web" ;
 <#hashTag> "#SemanticWeb" ;
-<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/d7/3b/cd/d73bcdc088c18144c9bf017d6d215d00.jpg>;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg>;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Semantically Enhanced Linked Data Network (Cloud).""";
 <http://purl.org/dc/terms/description> """Webby (or Web-like) Structured Data that's endowed with machine- and human-comprehensible entity relationship semantics. Basically, the meaning of a relationshipo between two entities is understandable by machines and humans e.g., <#SemanticWeb>, <http://dbpedia.org/resource/Semantic_Web>, <http://yago-knowledge.org/resource/Semantic_Web>, <http://rdf.freebase.com/ns/m.076k0>, and <http://www.wikidata.org/entity/Q54837> all refer to (name or denote) the same entity (thing).""" ;
 is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity>, <#SmartData> ;
@@ -1175,7 +1291,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity>, <#SmartData> ;
 									   <http://www.wikidata.org/entity/Q54837> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#LODCloud>, <#WorldWideWeb>, <#Internet> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/18CtxGK>, <http://slidesha.re/1hF48QL>,
-										  <#RDF>, <#SPARQL> ;
+										  <#RDF>, <#SPARQL>, <http://www.w3.org/Talks/WWW94Tim/>;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
 
 
@@ -1188,7 +1304,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity>, <#SmartData> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Resource Description Framework (RDF)" ;
 <#hashTag> "#RDF" ;
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
-<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/d7/3b/cd/d73bcdc088c18144c9bf017d6d215d00.jpg>;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg>;
 <http://www.w3.org/2000/01/rdf-schema#comment> """RDF is a language (i.e., system of signs, syntax, and semantics) that enables the construction of structured data that can be read and understood by both humans and machines.""";
 <http://purl.org/dc/terms/description> """RDF (Resource Description Framework) is a framework that enables the construction of structured data endowed with human and machine comprehensible entity relationship semantics. It makes this possible by providing a Language (system of Signs [IRIs], Syntax [Subject, Predicate, Object relationship roles], Semantics (First-order Logic), and Statements [Subject->Predicate->Object]) for expressing, representing, serializing, and publishing entity relationships in digital form. In usage patterns where IRIs take the form of HTTP URIs, the end product is a public or private Linked Data Network (Cloud) endowed with machine and human comprehensible entity relationship semantics. In the context of the World Wide Web, RDF enables the construction of a Semantically enhanced Linked Open Data abstraction which is commonly referred as 'The Semantic Web' . """ ;
 <http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/World_Wide_Web_Consortium> ;
@@ -1213,7 +1329,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 										  <http://bit.ly/16EVFVG>, <http://slidesha.re/1hF48QL>, 
 										  <http://slidesha.re/18CtxGK>, <http://www.tbray.org/ongoing/When/200x/2003/05/21/RDFNet>,
 										  <https://dvcs.w3.org/hg/rdf/raw-file/default/rdf-mt/index.html>,
-										  <http://www.w3.org/TR/rdf11-mt/>.
+										  <http://www.w3.org/TR/rdf11-mt/>, <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/>.
 										  
 # Schema.org
 
@@ -1230,7 +1346,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://xmlns.com/foaf/0.1/homepage> <http://schema.org> ;
 <http://purl.org/dc/terms/references> <#Microdata>, <#RDFa>, 
 									<#JSONLD>, <#StructuredData>, <#Data> ;
-<http://purl.org/dc/terms/isReferencedBy>	<http://bit.ly/1gJLTdm>, <https://plus.google.com/u/0/explore/SchemaOrg#this>.
+<http://purl.org/dc/terms/isReferencedBy>	<http://bit.ly/1gJLTdm>, <https://plus.google.com/u/0/explore/SchemaOrg#this>,
+											<http://schema.org/docs/datamodel.html>.
 									
 <https://plus.google.com/u/0/explore/SchemaOrg#this>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/bibo/Article> ; 
@@ -1242,6 +1359,21 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document>; 
 <http://www.w3.org/2000/01/rdf-schema#label> "How Search Engine Vendors Accelerated The Semantic Web's Arrival via Schema.org" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """G+ Post triggered by Wired article about Semantic Search inflection.""" .
+
+<http://schema.org/docs/datamodel/>
+<http://www.w3.org/2000/01/rdf-schema#label> "Schema.org Data Model" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """
+												Excerpt from home page: Generic model derived from RDF Schema (which in turn was derived from CycL, which in turn ...).
+												We have a set of types, arranged in a multiple inheritance heirarchy where each type may be a sub class 
+												of multiple types. We have a set of properties each property may have one or more types as its domains. 
+												The property may be used for instances of any of these types.
+												each property may have one or more types as its ranges. The value(s) of the property should be 
+												instances of at least one of these types. The decision to allow multiple domains and ranges 
+												was purely pragmatic. 
+												  """ ;
+<http://xmlns.com/foaf/0.1/page> <http://schema.org/docs/datamodel.html> ;
+<http://purl.org/dc/terms/references> <#Microdata>, <#RDFa>, <#SchemaOrg>, 
+									<#JSONLD>, <#StructuredData>, <#Data>, <#RDFa>, <#RDFSchema> .
 
 # RDF Schema Language
 
@@ -1368,7 +1500,11 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <#SQL>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <#Language> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Structured Query Language (SQL)" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Declarative query language for performing Create, Read, Update, and Delete operations on data represented as relational tables. This standard is widely adopted across SQL relational database management (RDBMS) products; collectively, these RDBMS products currently underly a majority applications and sevices that drive the global economy. """ ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Declarative query language for performing Create, Read, Update, and Delete 
+												  operations on data represented as relational tables. This standard is widely 
+												  adopted across SQL relational database management (RDBMS) products; collectively, 
+												  these RDBMS products currently underly a majority applications and sevices that drive 
+												  the global economy. """ ;
 <#hashTag> "#SQL" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/SQL> ;
 <http://purl.org/dc/terms/isReferencedBy> <#R2RML>, <#RDBMS>, <#DBMS>,
@@ -1379,14 +1515,36 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 										  
 <#NewSQL>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
-<http://www.w3.org/2000/01/rdf-schema#label> "New SQL" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of SQL based RDBMS product that handle scalability challenges using techiques such as: clustering and veritcal partitioning of data. Basically, for all intents an purposes, this is about product specific extensions to SQL to aimed at scalability challenges posed by the World Wide Web and Internet. """ ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NewSQL" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of SQL based RDBMS product that handles 
+												  scalability challenges using techiques such as: clustering and veritcal partitioning 
+												  of data. Basically, for all intents an purposes, this is about product specific extensions 
+												  to SQL aimed at scalability challenges posed by data access, integration, and management
+												  at World Wide Web and Internet scales. """ ;
 <#hashTag> "#NewSQL" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/NewSQL> ;
 <http://purl.org/dc/terms/references> <#SQL>, <#BigData>, <#DBMS>, <#GraphDBMS>, <#RDBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <virtuoso71.ttl#Virtuoso71>,
 										  <http://virtuoso.openlinksw.com>, <http://www.openlinksw.com> .
 
+
+# NoSQL
+										  
+<#NoSQL>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NoSQL" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Colloquialism for a variant (or generation) of RDBMS product that 
+												  doesn't conflate SQL (Structured Query Language) and Relational Database. Typically, you will
+												  find database management systems (DBMS) that support relations represented as relational 
+												  property/predicate graphs associated with this moniker. 
+												  . """ ;
+<#hashTag> "#NoSQL" ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/NewSQL> ;
+<http://purl.org/dc/terms/references> <#SQL>, <#BigData>, <#DBMS>, <#GraphDBMS>, <#RDBMS>, <#RDFDBMS> ;
+<http://purl.org/dc/terms/isReferencedBy> <virtuoso71.ttl#Virtuoso71>,
+										  <http://virtuoso.openlinksw.com>, <http://www.openlinksw.com> .
 # SPASQL
 										  
 <#SPASQL>
@@ -1825,6 +1983,25 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> ;
 <http://purl.org/dc/terms/references> <#WorldWideWeb>, <#Resource>, <#LinkedData>, 
 									  <#SemanticWeb>, <#RDF>, <#HTTPURI>, <#HTTPURL> .
+## Design Issues Note by TimBL
+									  
+<http://www.w3.org/DesignIssues/#this>	
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Web Architecture Design Issues & Philosophical Notes" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Collection of notes by TimBL chronicling his thoughs 
+												  about the Web and its architecture""" ;
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/DesignIssues> ;	
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> .		
+
+## Semantic Web
+
+<http://www.w3.org/Talks/WWW94Tim/>			
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "The Need for Semantics in the World Wide Web (Web)" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Showcasing the roles of denotation and entity relation semantics as 
+												  integral parts of the World Wide Web. """ ;
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/Talks/WWW94Tim/> ;	
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/People/Berners-Lee/card#i> .			  
 
 ## Understanding Data Presentation on Slideshare
 <http://slidesha.re/1hF48QL>
@@ -1836,13 +2013,36 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://www.w3.org/2002/07/owl#sameAs> <https://kingsley.idehen.net/about/id/entity/http/www.slideshare.net/kidehen/understanding-29894555> ;
 <http://purl.org/dc/terms/references> <#LinkedData>, <#RDF>, <#Data>, <#OpenData>, <#BigData>, <#SmartData>, <#SemanticWeb> . 
 
-## Pat Hayes Presentation on Blogic (Webby Logic)
+## Pat Hayes 
+<http://www.ihmc.us/users/phayes/PatHayes>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ;
+<http://xmlns.com/foaf/0.1/name> "Patrick John Hayes" ;
+<http://xmlns.com/foaf/0.1/firstName> "Patrick";
+<http://xmlns.com/foaf/0.1/familyName> "Hayes" ;
+<http://xmlns.com/foaf/0.1/nick> "Pat Hayes" ;
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/> ;
+<http://xmlns.com/foaf/0.1/made> <http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00029.html>,
+								 <http://slidesha.re/18CtxGK> .
+
+
+
+# Presentation on Blogic (Webby Logic)
+
 <http://slidesha.re/18CtxGK>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/bibo/Slideshow> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Blogic" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """ISWC 2009 Presentation by Pat Hayes that delives into the issues associated with infusing logic into the World Wide Web through the use of RDF.""" ;
 <http://xmlns.com/foaf/0.1/maker> <http://www.ihmc.us/users/phayes/PatHayes> ;
 <http://purl.org/dc/terms/references> <#LinkedData>, <#RDF>, <#Data>, <#SemanticWeb>. 
+
+# Posts
+
+<http://ontolog.cim3.net/forum/ontolog-forum/2014-04/msg00029.html>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Re: [ontolog-forum] mKR proof of correctness" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Explaining what 'Semantics' means.""" ;
+<http://xmlns.com/foaf/0.1/maker> <http://www.ihmc.us/users/phayes/PatHayes> ;
+<http://purl.org/dc/terms/references> <#Language>, <#Semantics> . 
 
 ## Ontolog forum thread about Data and Datum
 <http://bit.ly/UcnEGp>
@@ -2010,6 +2210,15 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://xmlns.com/foaf/0.1/maker> <http://dbpedia.org/resource/World_Wide_Web_Consortium> ;
 <http://purl.org/dc/terms/references> <#RDF>, <#LinkedData>, <http://dbpedia.org/resource/JSON-LD> .
 
+<http://www.w3.org/TR/2014/REC-rdf11-mt-20140225/>
+<http://www.w3.org/2000/01/rdf-schema#label> "RDF 1.1 Semantics" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """This document is part of RDF 1.1 document suite. 
+												  It is a revision of the 2004 Semantics specification 
+												  for RDF, thereby superseding the aformentioned document.
+											   """ ;
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://purl.org/dc/terms/references> <#RDF>, <#Relation>, <#RDFRelation>, <#Semantics>, <#Identifier>, 
+										<#RDFStatement> .
 
 
 ## To be continued .... ##

@@ -6,9 +6,11 @@
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
 <http://www.w3.org/1999/xhtml/vocab#alternate> <GlossaryOfTerms.txt> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "My Glossary of Terms" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Covers the definition of a variety of terms 
+											      associated with realm of Data, Networks, and Cloud abstractions.
+												""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-06-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-06-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -32,7 +34,8 @@
 								  <#SPARQLResultsFormat>, <#SPARQLGraphStoreProtocol>,
 								  <#SPARQLFederatedQuery>, <#SPARQLServiceDescription>,
 								  <#R2RML>, <#CSV>, <#SQL>, <#NewSQL>, <#NoSQL>, <#IRI>, <#URI>, <#URL>, <#HTTPURI>, 
-								  <#HTTPURL>, <#WebID>, <#Turtle>, <#JSONLD>, <#Notation>, <#Grammar>, <#Syntax>,
+								  <#HTTPURL>, <#WebID>, <#WebIDTLSProtocol>, <#NetID>, <#NetIDTLSProtocol>, <#Turtle>, <#JSONLD>, 
+								  <#Notation>, <#Grammar>, <#Syntax>,
 								  <#Referent>, <#Denotes>, <#CoReference>, <#Graph>, <#RDFXML>,
 								  <#Resource>, <#Relationship>, <#Relation>, <#RDFRelationship>,
 								  <#RDFRelation>, <#RDFStatement>, <#Entity>, <#SchemaOrg>, <#Microdata>,
@@ -78,7 +81,9 @@
 <#this>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "My Simple Data Related Terms Concept Scheme";
-<http://www.w3.org/2000/01/rdf-schema#comment> """Glossary covering the definition of a variety of terms associated with realm of Data, Networks, and Cloud abstractions.""" .
+<http://www.w3.org/2000/01/rdf-schema#comment> """Glossary covering the definition of a variety of 
+												  terms associated with realm of Data, Networks, 
+												  and Cloud abstractions.""" .
 
 
 # Document creator description
@@ -139,7 +144,8 @@
 <http://www.w3.org/2000/01/rdf-schema#label> "LinkedIn Page" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """LinkedIn hosted social media point of presence.""" .
 
-## Other descriptions
+## Other entity descriptions
+
 <#Ontology> 
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept>;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
@@ -283,7 +289,25 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#IRI>, <#Identifier>, <#URI>, <#HTTPURI> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/wiki/WebID> ;
 <http://purl.org/dc/terms/references> <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL> ;
-<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
+<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL>, <#NetID>, <#NetIDTLSProtocol>, <#WebID>, <#WebIDTLSProtocol>.
+
+<#NetID>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NetID" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """A resolvable URI (http:, ldap:, mailto: etc..) used to denote (signify, name, or "refer to") 
+												  a Person, Organization, Software, Machine, or anyhting else capable of mechanized operation. 
+												  This kind of URI resolves to a document that describes its referent, using a variety of 
+												  resolution protocols. Resolution protocol examples include: HTTP, LDAP, WebFinger, 
+												  Web Service APIs (e.g., those provided by Social Media/Network providers such as LinkedIn, 
+												  Microsoft, Google+, Facebook etc..).
+											   """ ;
+<#hashTag> "#NetID" ;
+<http://xmlns.com/foaf/0.1/depiction> <https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/img/WebID-overview.png> ;
+<http://www.w3.org/2002/07/owl#differentFrom> <#NetIDTLSProtocol> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#IRI>, <#Identifier>, <#URI>, <#HTTPURI> ;
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/wiki/WebID> ;
+<http://purl.org/dc/terms/references> <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL> ;
+<http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL>, <#NetIDTLSProtocol>, <#WebIDTLSProtocol>.
 
 
 <#DSN>
@@ -349,7 +373,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 												 (Table, View, Stored Procedure).
 												 """ ;
 <http://purl.org/dc/terms/hasPart> <#ODBCDSNConnectString> ;
-<http://www.w3.org/2004/02/skos/core#broader> <#Identifier>, <#DSN>, <#URL>;
+<http://www.w3.org/2004/02/skos/core#broader> <#Identifier>, <#IRI>, <#DSN>, <#URL>;
 <http://purl.org/dc/terms/references> <#JDBC>, <#Database>, <#RDBMS>, <#DBMS> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/1hF48QL> .
 
@@ -418,22 +442,37 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://purl.org/dc/terms/references> <#HTTP> ;
 <http://purl.org/dc/terms/isReferencedBy> <GlossaryOfTerms.ttl#> .
 
-## WebID+TLS
+## WebID-TLS
 
 <#WebIDTLSProtocol>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "WebID-TLS" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """WebID Authentication Protocol.""" ;
 <http://purl.org/dc/terms/description> """Combined use of Transport Layer Secruity (as already implemented by existing HTTPS user agents) 
-										  and RDF based entity relationship semantics as a mechanism for authenticating WebIDs -- that scales 
-										  from local area networks (or Intranets clouds) to the wide area networks (e.g., 
+										  and RDF based entity relationship semantics as a mechanism for authenticating WebIDs -- 
+										  that scales from local area networks (or Intranets clouds) to the wide area networks (e.g., 
 										  the public Web and Internet clouds).
 									  """ ;
 <#hashTag> "#WebIDTLS" ;
-<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/wiki/WebID> ;
-<http://purl.org/dc/terms/references> <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL>, 
-									  <#Internet>, <#WAN>, <#LAN>, <#WorldWideWEb> ;
-<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/2005/Incubator/webid/spec/> .
+<http://purl.org/dc/terms/references> <#WebID>, <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL>, 
+									  <#Internet>, <#WAN>, <#LAN>, <#WorldWideWeb> ;									  
+<http://purl.org/dc/terms/isReferencedBy> <#WebID>, <#NetID> .
+ 
+## NetID-TLS
+
+<#NetIDTLSProtocol>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "NetID-TLS" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """NetID Authentication Protocol.""" ;
+<http://purl.org/dc/terms/description> """Combined use of Transport Layer Secruity (as already implemented by existing HTTPS user agents) 
+										  and RDF based entity relationship semantics as a mechanism for authenticating WebIDs and NetIDs -- 
+										  that scales from local area networks (or Intranets clouds) to the wide area networks (e.g., 
+										  the public Web and Internet clouds).
+									  """ ;
+<#hashTag> "#NetIDTLS" ;
+<http://purl.org/dc/terms/references> <#NetID>, <#WebID>, <#URI>, <#HTTPURI>, <#HTTPURL>, <#URL>, 
+									  <#Internet>, <#WAN>, <#LAN>, <#WorldWideWeb> .
+
 
 ## Graph, Resources, and Entities
 
@@ -1258,6 +1297,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://lod-cloud.net/> , <http://dbpedia.org/About> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#WorldWideWeb> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#LOVCloud> ;
+<http://purl.org/dc/terms/references> <#RDF>, <#SemanticWeb>, <#LinkedData>, <#LinkedOpenData> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> .
 
 # LOV Cloud
@@ -1280,7 +1320,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Semantic Web" ;
 <#hashTag> "#SemanticWeb" ;
-<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/25/4c/5e/254c5e1a3058abc576d5eafc57fcaa14.jpg>;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/47/5f/0c/475f0c97bdd93ae2ae4fac657a714780.jpg> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Semantically Enhanced Linked Data Network (Cloud).""";
 <http://purl.org/dc/terms/description> """Webby (or Web-like) Structured Data that's endowed with machine- and human-comprehensible entity relationship semantics. Basically, the meaning of a relationshipo between two entities is understandable by machines and humans e.g., <#SemanticWeb>, <http://dbpedia.org/resource/Semantic_Web>, <http://yago-knowledge.org/resource/Semantic_Web>, <http://rdf.freebase.com/ns/m.076k0>, and <http://www.wikidata.org/entity/Q54837> all refer to (name or denote) the same entity (thing).""" ;
 is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity>, <#SmartData> ;
@@ -1473,7 +1513,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 # HTML + RDFa 
 
 <#RDFa>
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://dbpedia.org/class/yago/WorldWideWebConsortiumStandards> ;
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvVkKC5wpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "RDFa" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """HTML based notation for embedding RDF based structured data islands within HTML documents.""" ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/RDFa> ;

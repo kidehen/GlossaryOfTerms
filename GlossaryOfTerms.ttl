@@ -10,7 +10,7 @@
 											      associated with realm of Data, Networks, and Cloud abstractions.
 												""" ;
 <http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2014-06-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-11-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -22,14 +22,14 @@
                                   <#OpenData>,<#LinkedData>,<#LinkedOpenData>,<#LODCloud>,
 								  <#SmartData>,<#SemanticWeb>, <#this>, <http://danbri.org/foaf.rdf#danbri>,
 								  <#RDF>, <#ODBC>, <#JDBC>, <#OLEDB>, <#ADONet>, <#SPASQL>,
-								  <#RDFSchema>, <http://www.w3.org/People/Berners-Lee/card#i>,
-								  <#OWL>, <#Language>, <http://bit.ly/16EVFVG>,
-								  <http://bit.ly/10Y9FL1>, 
+								  <#RDFSchema>, <http://www.w3.org/People/Berners-Lee/card#i>, <#denotes>,
+								  <#OWL>, <#Language>, <http://bit.ly/16EVFVG>, <#Attribute>, <#Property>,
+								  <http://bit.ly/10Y9FL1>, <#Identity>, <#Name>, <#Handle>, <#Tag>, <#denotedBy>,
 								  <#hashTag>, <http://selnd.com/1eHyRex>, <http://bit.ly/1cbSTNb>,
 								  <http://bit.ly/1kVSEFs>, <#OpenDataConnectivity>, <#OpenDatabaseConnectivity>,
 								  <#PublicOpenData>, <http://slidesha.re/1hF48QL>, <#LOVCloud>,
 								  <http://www.w3.org/DesignIssues/Webize.html>, <#DataSet>,
-								  <http://slidesha.re/18CtxGK>,
+								  <http://slidesha.re/18CtxGK>, 
 								  <#SPARQL>, <#SPARQLProtocol>, <#SPARQLQueryLanguage>,
 								  <#SPARQLResultsFormat>, <#SPARQLGraphStoreProtocol>,
 								  <#SPARQLFederatedQuery>, <#SPARQLServiceDescription>,
@@ -39,7 +39,7 @@
 								  <#Referent>, <#Denotes>, <#CoReference>, <#Graph>, <#RDFXML>,
 								  <#Resource>, <#Relationship>, <#Relation>, <#RDFRelationship>,
 								  <#RDFRelation>, <#RDFStatement>, <#Entity>, <#SchemaOrg>, <#Microdata>,
-								  <#RDFa>, <#SQLRelationship>, <#SQLRelation>, <#RDFDBMS>, <#RDBMS>, <#DBMS>, 
+								  <#RDFa>, <#SQLRelationship>, <#SQLRelation>, <#RDFDBMS>, <#RDBMS>, <#DBMS>, <#VDBMS>,
 								  <#DBpedia>, <#SPARQLEndpoint>, <#Document>, <#Database>, <#Identifier>,
 								  <#SQLDBMS>, <#SDQ>, <#HTTP>, <#DBpediaLive>, <#OpenLinkDBpediaLive>,
 								  <#LODCloudCache>, <#URIBurner>, <#ODBCDSN>, <#ODBCDriverManager>, <#ODBCDriver>,
@@ -146,6 +146,98 @@
 
 ## Other entity descriptions
 
+<#Identity>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> ;
+<http://www.w3.org/2000/01/rdf-schema#label>  "Identity"; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Individual attributes collection by which an entity is recognized.""" ;
+is <http://www.w3.org/2000/01/rdf-schema#domain> of <#denotedBy>, 
+													<http://www.w3.org/2007/05/powder-s#describedby> ;
+is <http://www.w3.org/2000/01/rdf-schema#range> of <http://www.w3.org/1999/xhtml/vocab#describes>, <#denotes> ;
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/identity> . 
+
+<#denotedBy>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> ; 
+<http://www.w3.org/2002/07/owl#inverseOf> <#denotes> ;
+<http://www.w3.org/2000/01/rdf-schema#label>  "denotedBy" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Relationship property that associates an Entity with an Identifier, 
+												  for the purpose of signification [standing for].""" ;
+<http://www.w3.org/2000/01/rdf-schema#range> <#Identifier> ;
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing>, 
+											  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> . 
+											  
+<#denotes>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> ; 
+<http://www.w3.org/2000/01/rdf-schema#label>  "denotes" ; 
+<http://www.w3.org/2002/07/owl#inverseOf> <#denotedBy> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Relationship property that associates an Identifier with an Entity, 
+												  for the purpose of signification [standing for].""" ;
+<http://www.w3.org/2000/01/rdf-schema#domain> <#Identifier> ;
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing>, 
+											  <http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource> . 
+
+<#Name>
+<http://www.w3.org/2002/07/owl#equivalenClass> <#Identity>, <#Handle>, <#Tag> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Name" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Word or phrase by which one is identified (i.e. combination of identifier 
+				denotation and description document connotation).
+			 """ ;
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/name> . 
+
+<#Tag>
+<http://www.w3.org/2002/07/owl#equivalenClass> <#Identity>, <#Handle>, <#Name> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Tag" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """HTTP URI baseed Name that Identifies a Topic. For example
+												Weblog Post topics [a/k/a Tweets] are/used to be identified (named) 
+												using tags. Unfortunately, this kind of identification was based on 
+												literals as opposed to HTTP URIs which ultimately lead to emergence of 
+												hashtags which are now broadly used across the Web and Internet, courtesy
+												of Twitter's popularity as a micro-blogging platform. """ ;
+<http://www.w3.org/1999/xhtml/vocab#related>  <#WorldWideWeb>, <#LinkedData>, <#SemanticWeb> ;
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/tag> . 
+
+
+<#HashTag>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <#Tag> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "HashTag" ; 
+<http://www.w3.org/2004/02/skos/core#prefLabel> "Hash Tag" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """HTTP URI baseed Name that Identifies a Topic. For example
+												Twitter Post topics [a/k/a Tweets] are identified (named) on Twitter using 
+												hastags. """ ;
+is <http://www.w3.org/2000/01/rdf-schema#domain> of <#denotedBy>, 
+													<http://www.w3.org/2007/05/powder-s#describedby> ;
+is <http://www.w3.org/2000/01/rdf-schema#range> of <http://www.w3.org/1999/xhtml/vocab#describes> ;
+<http://www.w3.org/1999/xhtml/vocab#related>  <#WorldWideWeb>, <#LinkedData>, <#SemanticWeb> ;
+<http://purl.org/dc/terms/references> <http://searchengineland.com/future-seo-linked-open-data-lod-175839> . 
+
+<http://searchengineland.com/future-seo-linked-open-data-lod-175839>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Future of SEO: Linked Open Data" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Post about the role of Hash Tags [HTTP URI based entity names] 
+												as prime drivers behind a Web end-user curated Semantic Web.""" .
+
+<#Handle>
+<http://www.w3.org/2002/07/owl#equivalenClass> <#Identity>, <#Tag>, <#Name> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Handle" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Synonym of Name. For example, on Twitter @handle is how Twitter users are
+												identified or named. """ ;
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/handle> . 
+
+<#Attribute>
+is <http://www.w3.org/2000/01/rdf-schema#subClassOf> of rdf:Property ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Handle" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """Characteristic of an entity [thing].""" ; 
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/attribute> . 
+
+<#Property>
+<http://www.w3.org/2002/07/owl#equivalenClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> ;
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> <#Attribute> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Property" ; 
+<http://www.w3.org/2000/01/rdf-schema#comment> """An attribute (characteristic) shared by all members of a class 
+												  or category of things [entities].
+											   """ ; 
+<http://purl.org/dc/terms/references> <http://www.vocabulary.com/dictionary/property> . 
+
+
 <#Ontology> 
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept>;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
@@ -243,8 +335,8 @@
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "URL" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A Uniform Resource Locator (URL) is string based sign 
-												  used to denote (signify, name, or "refer to") the location (address) 
-												  of data on a network.""" ;
+												  used to name (or identify) the location (address) 
+												  of a document on a network.""" ;
 <#hashTag> "#URL"  ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Uniform_resource_locator> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://sw.opencyc.org/concept/Mx4rvmQlOpwpEbGdrcN5Y29ycA> ;
@@ -257,8 +349,10 @@
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "HTTP URI" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """An HTTP scheme based Uniform Resource Identifier (URI) endowed 
-												  with the dual capability of entity denotation (signification, naming, reference) 
-												  and description lookup over an HTTP protocol based network.
+												  with the dual capability of entity denotation (signification) 
+												  and connotation (description) lookup over an HTTP protocol based network. Put differently,
+												  this kind of identifier functions as a Name that can be used to Identify anything, in a manner 
+												  that's perceptible via a Web Document.
 												""" ;
 <#hashTag> "#URI", "#HTTP"  ;
 <http://xmlns.com/foaf/0.1/depiction> <https://dl.dropboxusercontent.com/u/11096946/Screenshots/linked-data-hash-uri-semiotic-triangle-2.png> ;
@@ -271,7 +365,9 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <#HTTPURL>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://sw.opencyc.org/concept/Mx4rvViIrZwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "HTTP URL" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """An HTTP scheme based Uniform Resource Locator (URL) used to denote (signify, name, or "refer to") the location (address) of data on an HTTP protocol based network.""" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """An HTTP scheme based Uniform Resource Locator (URL) used 
+												  to name (or identify) the location (address) 
+												  of a document on an HTTP protocol based network.""" ;
 <#hashTag> "#URL", "#HTTP"  ;
 is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#IRI>, <#Identifier>, <#URI>, <#URL>, <#HTTPURI> ;
@@ -644,7 +740,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 <http://purl.org/dc/terms/isPartOf>  <#SQLRelation> .
 
 <#RDFStatement>	
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> ;
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "RDF Statement" ;
 <http://www.w3.org/2004/02/skos/core#altLabel> "RDF Triple" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Representation of an entity
@@ -689,7 +785,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 <http://purl.org/dc/terms/isReferencedBy> <#DBMS>, <#RDBMS>, <#GraphDBMS>, <#RDFDBMS>, <http://bit.ly/NC1yaP>, 
 										  <http://cm.bell-labs.com/cm/cs/who/dmr/notes.html> .
 										
-## Relational Database Management Systems
+## Database Management Systems
 
 <#DBMS>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -707,11 +803,36 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#LinkedOpenData>, <#Data>, <#SQL>, <#SPARQL>, 							
 										<http://slidesha.re/1hF48QL>, <#RDBMS>, <#RDFDBMS>,
-										<virtuoso71.ttl#Virtuoso71>,<http://uda.openlinksw.com>,
-										<http://virtuoso.openlinksw.com>, <http://www.openlinksw.com>,
+										<virtuoso71.ttl#Virtuoso71>,<http://uda.openlinksw.com/>,
+										<http://virtuoso.openlinksw.com/>, <http://www.openlinksw.com/>,
 										<http://bit.ly/NC1yaP> .
 										
+## Virtual Database Management Systems
 
+<#VDBMS>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Virtual Database Management System" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """An application that provides storage, indexing, 
+												and declarative query access to structured data (entity relationships), 
+												in virtual form.
+												""" ;
+<#hashTag> "#VDBMS" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/f0/a5/a3/f0a5a31a7153ed228e87f24c26fb152b.jpg> ;
+<http://www.w3.org/2002/07/owl#differentFrom> <#Database> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Database> ;
+<http://www.w3.org/2004/02/skos/core#broader> <#DBMS>, <#RDBMS>, <#RDFDBMS>, <#GraphDBMS> ;
+<http://purl.org/dc/terms/references>  <#StructuredData>, <#Data> ;
+is <http://xmlns.com/foaf/0.1/topic> of <virtuoso71.ttl#Virtuoso71>, <http://dbpedia.org/resource/Virtuoso_Universal_Server>,
+										<http://virtuoso.openlinksw.com/>, <http://www.openlinksw.com/>,
+										<http://www.techopedia.com/definition/13867/virtual-database> ;
+<http://www.w3.org/1999/xhtml/vocab#related> <http://dbpedia.org/resource/Federated_database_system>, 
+											 <http://dbpedia.org/resource/Data_virtualization>,
+											 <http://dbpedia.org/resource/Data_integration>,
+											 <http://dbpedia.org/resource/Dataspaces>,
+											 <http://dbpedia.org/resource/Semantic_integration>.
+
+## Relational Database Management Systems
 										
 <#RDBMS>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -741,6 +862,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 										<http://www.jfsowa.com/pubs/cg1976.pdf#this>,
 										<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#this>,
 										<http://www.dbdebunk.com/2014/04/david-mcgoveran-comments-on-jim.html> .
+										
 
 ## Reference Material Articles on RDBMS
 
@@ -1249,7 +1371,9 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://bit.ly/10Y9FL1>,<http://media-cache-ec0.pinimg.com/originals/5b/b0/db/5bb0db3e944cc8f30e5f0091b161962a.jpg> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """Web of Linked Documents.""";
 <http://purl.org/dc/terms/description> """Globally accessible abstraction layer atop the Internet cloud comprised of a network (or cloud) of Linked Documents. The predominant document format is HTML.""" ;
-<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_Wide_Web> ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/World_Wide_Web>, 
+										<https://twitter.com/hashtag/WorldWideWeb#this>, 
+										<https://twitter.com/facebook/WorldWideWeb#this> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Internet>, <#WAN> ;
 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Abstraction> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/History/1989/proposal.html> .
@@ -1799,6 +1923,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDataConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Open Database Connectivity (ODBC)" ;
 <http://www.w3.org/2004/02/skos/core#altLabel> "ODBC" ;
 <#hashTag> "#ODBC" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/ef/b2/7e/efb27e54ef098c18a93aa8a074d5817d.jpg> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A 'C' programming language based application programming interface (API) that enables the development and deployment of SQL relational database independent (agnostic) applications. """ ;
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/ODBC> ;
 is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
@@ -1867,6 +1992,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#OpenDatabaseConnectivity> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Java Database Connectivity (JDBC)" ;
 <http://www.w3.org/2004/02/skos/core#altLabel> "JDBC" ;
 <#hashTag> "#JDBC" ;
+<http://xmlns.com/foaf/0.1/depiction> <http://media-cache-ec0.pinimg.com/originals/75/11/a8/7511a81c2e4ec244473cc514d997bd0a.jpg> ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A Java programming language based application programming 
 												  interface (API) that enables the development and deployment 
 												  of SQL relational database independent (agnostic) applications. 

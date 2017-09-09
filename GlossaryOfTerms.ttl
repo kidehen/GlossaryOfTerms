@@ -1,3 +1,5 @@
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> . @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> . @prefix ns2:	<http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/GlossaryOfTerms.ttl#> . @prefix foaf:	<http://xmlns.com/foaf/0.1/> . @prefix owl:	<http://www.w3.org/2002/07/owl#> . @prefix dbpedia:	<http://dbpedia.org/resource/> . @prefix ns6:	<http://dbpedia.org/> . @prefix dcterms:	<http://purl.org/dc/terms/> . @prefix ns8:	<http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/virtuoso71.ttl#> . @prefix ns9:	<http://www.openlinksw.com/dataspace/organization/openlink#> . @prefix ns10:	<https://twitter.com/> . @prefix ns11:	<http://www.linkedin.com/company/> . @prefix ns12:	<https://plus.google.com/b/100570109519069333827/100570109519069333827/> . @prefix ns13:	<http://www.ihmc.us/users/phayes/> . @prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> . @prefix ns15:	<http://www.w3.org/People/Berners-Lee/card#> . @prefix ns16:	<http://www.tbray.org/ongoing/When/200x/2003/05/21/> . @prefix bibo:	<http://purl.org/ontology/bibo/> . @prefix schema:	<http://schema.org/> . @prefix ns19:	<http://bit.ly/> . @prefix ns20:	<http://queue.acm.org/detail.cfm?id=1961297#> . @prefix skos:	<http://www.w3.org/2004/02/skos/core#> . @prefix xsd:	<http://www.w3.org/2001/XMLSchema#> . @prefix ns23:	<http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#> . @prefix ns24:	<http://danbri.org/foaf.rdf#> . @prefix xhv:	<http://www.w3.org/1999/xhtml/vocab#> . @prefix ns26:	<http://creativecommons.org/ns#> . @prefix ns27:	<http://kingsley.idehen.net/dataspace/person/kidehen#> . @prefix dbpedia-owl:	<http://dbpedia.org/ontology/> . @prefix ctag:	<http://commontag.org/ns#> . @prefix ns30:	<http:/dbpedia.org/resource/> . @prefix ns31:	<http://youtu.be/> . @prefix ns32:	<https://twitter.com/hashtag/WorldWideWeb#> . @prefix ns33:	<https://twitter.com/facebook/WorldWideWeb#> . @prefix ns34:	<http://yago-knowledge.org/resource/> . @prefix ns35:	<http://www.wikidata.org/entity/> . @prefix ns36:	<http://sw.opencyc.org/concept/> . @prefix ns37:	<https://plus.google.com/112399767740508618350/posts/> . @prefix doap:	<http://usefulinc.com/ns/doap#> . @prefix ns39:	<http://purl.org/linked-data/api/vocab#> . @prefix ns40:	<http://live.dbpedia.org/> . @prefix ns41:	<http://semanticscience.org/resource/> . @prefix dc:	<http://purl.org/dc/elements/1.1/> . @prefix lod:	<http://lod.openlinksw.com/> . @prefix ns44:	<http://dbpedia-live.openlinksw.com/> . @prefix ns45:	<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1085&rep=rep1&type=pdf#> . @prefix ns46:	<http://www.jfsowa.com/pubs/cg1976.pdf#> . @prefix ns47:	<http://tools.ietf.org/html/> . @prefix ns48:	<http://www.vocabulary.com/dictionary/> . @prefix ns49:	<http://www.whatwg.org/specs/web-apps/current-work/multipage/microdata.html#> . @prefix ns50:	<https://plus.google.com/u/0/explore/SchemaOrg#> . @prefix ns51:	<http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/> . @prefix ns52:	<http://slidewiki.org/deck/801#> . @prefix ns53:	<http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> . @prefix ns54:	<https://plus.google.com/u/0/explore/> . @prefix ns55:	<http://searchengineland.com/> . @prefix ns56:	<http://dbpedia.org/resource/RDF/> . @prefix ns57:	<http://www.ontologydesignpatterns.org/ont/web/irw.owl#> . @prefix ns58:	<http://www.w3.org/wiki/> . @prefix ns59:	<http://www.w3.org/TR/rdf-schema/#> . @prefix yago:	<http://dbpedia.org/class/yago/> . @prefix ns61:	<http://linkeddata.uriburner.com/> . @prefix ns62:	<http://wiki.dbpedia.org/> . @prefix ns63:	<http://www.techopedia.com/definition/13867/> . @prefix ns64:	<https://kingsley.idehen.net/about/id/entity/http/www.slideshare.net/kidehen/> . @prefix ns65:	<http://www.w3.org/TR/2013/> . @prefix ns66:	<http://www.youtube.com/channel/> . @prefix ns67:	<http://www.w3.org/DesignIssues/Axioms.html#> . @prefix vcard2006:	<http://www.w3.org/2006/vcard/ns#> . @prefix ns69:	<http://linguistics.stackexchange.com/questions/3484/> . @prefix ns70:	<http://www.merriam-webster.com/dictionary/> . @prefix ns71:	<https://plus.google.com/u/0/b/114041685500799566359/s/DBpedia/> . @prefix ns72:	<http://www.w3.org/DesignIssues/#> . @prefix ns73:	<http://www.w3.org/> . @prefix dcat:	<http://www.w3.org/ns/dcat#> . @prefix scovo:	<http://purl.org/NET/scovo#> . @prefix ns76:	<http://databugger.aksw.org/ns/core#> . @prefix ns77:	<http://purl.org/ctic/dcat#> . @prefix ns78:	<http://purl.org/vocommons/voaf#> . @prefix ns79:	<http://www.ontotext.com/proton/protonext#> . @prefix dcmitype:	<http://purl.org/dc/dcmitype/> . @prefix ns81:	<http://inference-web.org/2.0/pml-provenance.owl#> . @prefix ns82:	<http://vocab.deri.ie/cogs#> . @prefix void:	<http://rdfs.org/ns/void#> . @prefix sd:	<http://www.w3.org/ns/sparql-service-description#> . @prefix ns85:	<http://www.w3.org/TR/rdf11-concepts/#> . @prefix ns86:	<http://www.w3.org/2002/07/> . @prefix ns87:	<http://id.myopenlink.net/dataspace/person/KingsleyUyiIdehen#> . @prefix ns88:	<http://myopenlink.net/dataspace/person/kidehen#> . @prefix ns89:	<https://plus.google.com/+KingsleyIdehen/> . @prefix ns90:	<http://kingsley.idehen.net/dataspace/person/> . @prefix ns91:	<http://www.linkedin.com/in/> . @prefix ns92:	<http://www.tumblr.com/blog/> . @prefix ns93:	<https://www.w3.org/2001/sw/wiki/> . @prefix ns94:	<http://www.w3.org/2001/sw/rdb2rdf/wiki/> . @prefix ns95:	<http://www.w3.org/ns/> . 
+### Source document ###
 ## Classifying Data Using Turtle Notation ##
 
 # Document Metadata which includes Content Licensing i.e., CC-BY-SA 4.0 (International)
@@ -10,7 +12,7 @@
 											      associated with realm of Data, Networks, and Cloud abstractions.
 												""" ;
 <http://purl.org/dc/terms/created> "2014-01-03T00:00:00-05:00"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<http://purl.org/dc/terms/modified> "2015-02-28T16:50:00-05:00"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2015-04-14T09:17:00-05:00"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <http://xmlns.com/foaf/0.1/maker>  <#kidehen> ;
 <http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 <http://creativecommons.org/ns#attributionName> "Kingsley Uyi Idehen" ;
@@ -47,7 +49,7 @@
 								  <#DataDictionary>, <#DatabaseSchema>, <#Schema>, <http://dbpedia.org/resource/John_F._Sowa>,
 								  <http://ontolog.cim3.net/cgi-bin/wiki.pl?EdBarkmeyer#this>, <http://www.ihmc.us/users/phayes/PatHayes>,
 								  <http://dbpedia.org/resource/Peter_Chen>, <#Intranet>, <#Extranet>, <#WAN>, <#LAN>,
-								  <http://schema.org/docs/datamodel.html>, <#WebDAV>, <#LDP>.
+								  <http://schema.org/docs/datamodel.html>, <#WebDAV>, <#LDP>, <#RelationalDatabase> .
 
 
 ## Prior Versions
@@ -777,6 +779,7 @@ is foaf:primaryTopic of <http://www.w3.org/TR/2015/REC-ldp-20150226/>,
 											   """ ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Relationship> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#RDFRelation>, <#SQLRelation> ;
+<http://purl.org/dc/terms/references> <http://dbpedia.org/resource/Relation_(history_of_concept)> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#WebID>, <#LinkedOpenData>, <#Data>, <#SQLRelation>, <#RDFRelation>,							
@@ -805,7 +808,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 										<http://www.w3.org/2002/07/owl#AsymmetricProperty>,
 										<http://www.w3.org/2002/07/owl#IrreflexiveProperty> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Relation> ;
-<http://purl.org/dc/terms/references>  <#IRI>, <#RDF>, <#RDFStatement>, <#URI>, <#HTTPURI> ;
+<http://purl.org/dc/terms/references>  <http://dbpedia.org/resource/Relation_(history_of_concept)> ;
+<http://www.w3.org/1999/xhtml/vocab#related> <#IRI>, <#RDF>, <#RDFStatement>, <#URI>, <#HTTPURI> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#RDF>, <#LinkedData>, 
 										<#SemanticWeb>, <#HTTPURI>, <#HTTPURL>, 
 										<#WebID>, <#LinkedOpenData>, <#Data>, 
@@ -829,6 +833,8 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 										""" ;
 <http://purl.org/dc/terms/hasPart>  <#SQLRelationHeader>, <#SQLRelationBody> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Relation> ;
+<http://purl.org/dc/terms/references>  <http://dbpedia.org/resource/Relation_(history_of_concept)> ;
+<http://www.w3.org/1999/xhtml/vocab#related> <#RDFStatement>, <#RDFRelation> ;
 <http://purl.org/dc/terms/isReferencedBy> <#URI>, <#URL>, <#SQL>, <#Relation>,
 										<#SQL>, <#HTTPURI>, <#HTTPURL>, 
 										<#LinkedOpenData>, <#Data>, 
@@ -904,6 +910,24 @@ is <http://xmlns.com/foaf/0.1/focus> of <http://www.w3.org/2002/07/owl#ObjectPro
 											   """ ;
 <http://purl.org/dc/terms/isReferencedBy> <#DBMS>, <#RDBMS>, <#GraphDBMS>, <#RDFDBMS>, <http://bit.ly/NC1yaP>, 
 										  <http://cm.bell-labs.com/cm/cs/who/dmr/notes.html> .
+										  
+										  
+<#RelationalDatabase>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
+<http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
+<http://xmlns.com/foaf/0.1/depiction> <http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Relational_database_terms.svg/700px-Relational_database_terms.svg.png> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "Relational Database" ;
+<http://www.w3.org/2002/07/owl#differentFrom> <#DBMS>, <#RDBMS>, <#GraphDBMS>, <#RDFDBMS>, <#SQL> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """A document comprised of structured data represented as sets of relations. These
+												  relations are basically sets of tuples (representing entity relationships) grouped 
+												  by a predicate which indicates the entity relationship type. For instance, in a SQL
+												  Relational Database Management system a Table Name functions as the Predicate. Whereas 
+												  in an RDF Predicate/Property Graph based Relational Database Management system (or store) 
+												  a Predicate is self-evident part Subject->Predicate->Object based 3-tuple. 
+											   """ ;
+<http://purl.org/dc/terms/isReferencedBy> <#DBMS>, <#RDBMS>, <#GraphDBMS>, <#RDFDBMS> ;
+<http://purl.org/dc/terms/references> <#Relation>, <#RDBMS>, <#SQLRelation>, <#RDFRelation>, <#RDFDBMS> ;
+<http://www.w3.org/1999/xhtml/vocab#related> <#SPARQL>, <#RDF>, <#SQL>, <#LinkedData>, <#SemanticWeb> .
 										
 ## Database Management Systems
 
@@ -1012,7 +1036,7 @@ is <http://xmlns.com/foaf/0.1/topic> of <virtuoso71.ttl#Virtuoso71>, <http://dbp
 												   is not really natural if it requires the user to know how 
 												   the data are represented. This paper defines a formalism, 
 												   called conceptual graphs, that can describe data according 
-												   to the user’s view and ac- cess data according to thseystem’s view. 
+												   to the userÃÂ¢ÃÂÃÂs view and ac- cess data according to thseystemÃÂ¢ÃÂÃÂs view. 
 												   In addition, the graphs can representfunctional 
 												   dependencies in the data base and suppoirnt- ferences and 
 												   computations that are not explicit in the initial query.
@@ -1186,18 +1210,42 @@ is <http://xmlns.com/foaf/0.1/topic> of <virtuoso71.ttl#Virtuoso71>, <http://dbp
 <http://www.w3.org/2004/02/skos/core#narrower> <#StructuredData>,
                                   <#OpenData>,<#LinkedData>,<#LinkedOpenData>,
 								  <#SmartData> .
-
 <#BigData> 
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
 <http://www.w3.org/2004/02/skos/core#inScheme> <#this> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Big Data" ;
 <#hashTag> "#BigData" ;
-<http://www.w3.org/2000/01/rdf-schema#comment> """Data that's disparately located, varied in structure, voluminous, and rapidly changing.""" ;
-<http://purl.org/dc/terms/description> """Data (structured or unstructured) that's heterogeneously shaped, disparately located, voluminous, and rapidly changing e.g., The World Wide Web and the many Data Spaces (e.g., feed based Social Networks) it exposes. Same applies to the burgeoning Internet of Things which is all about sensory data produced by devices. """ ;
-<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Big_data> ;
+<http://www.w3.org/2000/01/rdf-schema#comment> 
+""" 
+Big Data is a term used to identify data that has the following characteristics (properties, attributes, features):
+
+[1] High Volume
+[2] High Velocity 
+[3] High Variety .
+
+Why are these characteristics significant enough to define a genre of database management challenges and associated technology solutions? 
+
+Database Management Applications have historically been designed to serve the needs of what Geoffrey Moore refers to as "Systems of Record" where the combined effects of Data Volume, Velocity, and Variety are limited.
+
+Emergence of the Web, REST Architecture, and Web Applications has created a new "Systems of Engagement" application genre (also coined by Geoffrey Moore). This application genre is characterized by Database Documents taking any combination of the following forms:
+
+[1] CSV files
+[2] Optimized Record Columnar (ORC) files
+[3] Parquet Files
+[4] HTTP Logs
+[5] OS System Logs
+[6] JSON (e.g., Avro Files)
+[7] Other structured document forms populated with engagement activity .
+
+As you can see, the database document types outlined above are different from the database documents associated with your typical RDBMS, for instance. 
+
+Solution frameworks like Hadoop and Spark provide new infrastructure (Distributed Storage, Relational Abstraction Mapping & Transformation) for handling these new Data Management needs.
+""" ;
+<http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Big_data>, <http://data.openlinksw.com/oplweb/glossary-term/BigData#this> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#Data> ;
 <http://www.w3.org/2004/02/skos/core#narrower> <#OpenData>, <#LinkedData>,<#LinkedOpenData>,
-								               <#SmartData> .
+								               <#SmartData> ;
+<http://www.w3.org/2004/02/skos/core#related <http://dbpedia.org/resource/Apache_Parquet>, <http://dbpedia.org/resource/Apache_Spark>, <http://dbpedia.org/resource/Apache_Hive>, <http://dbpedia.org/resource/RCFile>, <http://dbpedia.org/resource/MapReduce>, <http://dbpedia.org/resource/Comma-separated_values>, <http://dbpedia.org/resource/Apache_Avro>	 . 
 
 <#OpenData> 
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -1597,7 +1645,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#LinkedOpenDataConnectivity>, <#SmartDa
 <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/resource/Semantic_Web>,
 									   <http://yago-knowledge.org/resource/Semantic_Web>,
 									   <http://rdf.freebase.com/ns/m.076k0>, 
-									   <http://www.wikidata.org/entity/Q54837> ;
+									   <http://www.wikidata.org/entity/Q54837>, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this> ;
 <http://www.w3.org/2004/02/skos/core#broader> <#LODCloud>, <#WorldWideWeb>, <#Internet> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://slidesha.re/18CtxGK>, <http://slidesha.re/1hF48QL>,
 										  <#RDF>, <#SPARQL>, <http://www.w3.org/Talks/WWW94Tim/>;
@@ -1625,7 +1673,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#LinkedOpenDataConnectivity>, <#SmartDa
 									<#RDFXML>;
 <http://www.w3.org/2004/02/skos/core#broader> <#LODCloud> ;
 is <http://xmlns.com/foaf/0.1/focus> of <#LinkedOpenDataConnectivity> ;
-<http://www.w3.org/2000/01/rdf-schema#seeAlso> <#LinkedData>, <#SemanticWeb>, <#WorldWideWeb>, <http://dbpedia.org/resource/Entity–attribute–value_model>, <http://bit.ly/16EVFVG>, <http://youtu.be/USF1H70bRl0> ;
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <#LinkedData>, <#SemanticWeb>, <#WorldWideWeb>, <http://dbpedia.org/resource/EntityÃÂ¢ÃÂÃÂattributeÃÂ¢ÃÂÃÂvalue_model>, <http://bit.ly/16EVFVG>, <http://youtu.be/USF1H70bRl0> ;
 <http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/>,
 										  <http://www.w3.org/TR/2014/PR-rdf11-mt-20140109/>,
 										  <http://www.w3.org/TR/2014/PR-turtle-20140109/>,
@@ -2018,8 +2066,7 @@ is <http://xmlns.com/foaf/0.1/focus> of <#LinkedOpenDataConnectivity> ;
 ## Language 
 
 <#Language>
-<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
-<http://www.w3.org/2002/07/owl#sameAs> <http://sw.opencyc.org/concept/Mx4rvVj0iZwpEbGdrcN5Y29ycA> ;
+<http://www.w3.org/2002/07/owl#equivalentClass> <http://sw.opencyc.org/concept/Mx4rvVj0iZwpEbGdrcN5Y29ycA> ;
 <http://www.w3.org/2000/01/rdf-schema#label> "Language" ;
 <http://www.w3.org/2000/01/rdf-schema#comment> """A system of signs [for denotation or naming], syntax [for grammar], 
 												 and semantics [for entity relation roles & types] that enable encoding 

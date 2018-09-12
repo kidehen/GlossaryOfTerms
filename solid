@@ -1,0 +1,47 @@
+@prefix solid-auth-client: <solid-auth-client.ttl#> . 
+@prefix solid-auth-client: <solid-auth-client.ttl#> . 
+@prefix solid-client: <solid-client.ttl#> . 
+@prefix : <#> .
+
+solid-client:lib 
+	a :JavascriptLib ;
+	rdfs:label "Solid Client Library for Javascript" ;
+	:hasAuthDependency solid-auth-client:lib ;
+	:hasReadWriteDependency [ 
+	                          rdfs:label "Fetch-based HTTP Operations Handler Library" ;   
+	                          :httpRequestHandler :GetMethod, :PostMethod, :HeadMethod 
+							 ] .
+
+
+node-solid-server:module
+	a :HttpServerModule ;
+	rdfs:label "Solid Server Module for Node.js" ;
+    :hasAuthDependency oidc-auth-manager:lib ;
+    :hasAuthDependency solid-auth-oidc:lib ;
+    :hasAuthDependency solid-auth-client:lib .
+
+oidc-auth-manager:lib
+	a :JavascriptLib ;
+	rdfs:label "Solid Authentication Manager Library" ;
+	rdfs:comnment """OpenID Connect (OIDC) Authentication Flow Manager.""" ;
+    :hasAuthDependency oidc-op:lib ;
+    :hasAuthDependency oidc-rs:lib ;
+    :hasAuthDependency solid-multi-rp-client:lib ;
+	schema:hasPart solid-auth-client:lib, solid-auth-oidc:lib .
+
+solid-auth-client:lib 
+	a :JavascriptLib ;
+	rdfs:label "Solid Authentication Library -- Client" ;
+	rdfs:comnment """Handles client-side authentication for OpenID Connect (OIDC) protocol.""" ;
+    :hasAuthDependency oidc-rp:lib .
+
+solid-auth-oidc:lib
+	a :JavascriptLib ;
+	rdfs:label "Solid Authentication Library - OpenID Connect (OIDC)" ;
+	rdfs:comnment """Handles OpenID Connect (OIDC) Authentication.""" ;
+    :hasAuthDependency oidc-rp:lib .
+
+solid-multi-rp-client:lib
+	a :JavascriptLib ;
+	rdfs:label "Solid Multi-Relying Party OpenID Connect (OIDC) Client Library" ;
+    :hasAuthDependency oidc-rp:lib .
